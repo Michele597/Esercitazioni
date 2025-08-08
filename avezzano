@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Avezzano</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+    }
+
+    p {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="demo1"></h1>
+  <p id="demo2"></p>
+
+  <script>
+    document.getElementById("demo1").innerText = "Avezzano";
+
+    document.getElementById("demo2").innerHTML = `
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Avezzano_view.jpg/330px-Avezzano_view.jpg" 
+           alt="Piazza Risorgimento - Avezzano" 
+           style="float: right; margin: 0 0 15px 20px; width: 300px; max-width: 100%; border-radius: 10px;">
+      
+      <b>Avezzano</b> (in <a href="#">dialetto marsicano: /avedzdzane/</a>) è un <a href="#">comune italiano</a> di oltre 40 000 abitanti situato in <a href="#">Abruzzo</a>.<br><br>
+      Elevato a rango di <a href="#">città</a> con il <a href="#">decreto del presidente della Repubblica</a> del 21 giugno 1994, è documentato per la prima volta con chiarezza nel IX secolo. 
+      Il centro urbano si è sviluppato a cominciare dal <a href="#">riordino amministrativo francese</a> e ancor più verso la fine del XIX secolo in seguito al prosciugamento del lago <a href="#">Fucino</a>, anticamente situato al centro della <a href="#">Marsica</a>.<br><br>
+      La città, quasi completamente distrutta dal <a href="#">terremoto del 1915</a>, è decorata con la <a href="#">medaglia al merito civile</a> poiché nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei <a href="#">bombardamenti</a> aerei anglo-americani e atti di violenza con le rappresaglie <a href="#">nazifasciste</a>.<br><br>
+      A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e ferroviario in Italia centro-meridionale.
+    `;
+  </script>
+
+</body>
+</html>
