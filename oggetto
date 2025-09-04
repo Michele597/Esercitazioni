@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>Libri</h1>
+
+    <p id="oggetti"></p>
+
+    <script>
+      var libro = {nome: "Guerra e Pace", autore: "Lev Tolstoj", editore: "Mondadori"};
+
+      document.getElementById("oggetti").innerHTML = libro.nome + " - " + libro.autore + " (" + libro.editore + ")";
+    </script>
+  </body>
+</html>
