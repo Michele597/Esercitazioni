@@ -1,0 +1,29 @@
+<html>
+  <body>
+    
+    <h1>Funzione Dinamica</h1>
+    <p id="variabile"></p>
+    <p id="potenza"></p>
+
+    <script>
+
+      function potenza(base, esponente) {
+        if (isNaN(base) || isNaN(esponente)) {
+          return "Errore: devi inserire numeri validi";
+        }
+        if (base < 0 && !Number.isInteger(esponente)) {
+          return "Errore: Inserire un numero non negativo";
+        }
+        return Math.pow(base, esponente);
+      }
+
+      var base = parseFloat(prompt("Inserisci la base", "2"));
+      var esponente = parseFloat(prompt("Inserisci l'esponente", "3"));
+
+      var risultato = potenza(base, esponente);
+
+      document.getElementById("potenza").innerHTML = base + " elevato a " + esponente + " = " + risultato;
+
+    </script>
+  </body>
+</html>
